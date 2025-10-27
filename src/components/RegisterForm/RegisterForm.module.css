@@ -1,0 +1,21 @@
+.wrapper {
+    border-radius: 30px;
+width: 600px;
+height: 736px;
+background: #1f1f1f;
+}
+.container {
+    border-radius: 30px;
+width: 600px;
+height: 736px;
+background: #1f1f1f;
+}
+.title {
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 64px;
+line-height: 94%;
+letter-spacing: 0.02em;
+color: #f9f9f9;
+color: rgba(227, 227, 227, 0.5);
+}
