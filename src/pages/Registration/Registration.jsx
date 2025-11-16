@@ -4,7 +4,7 @@ import css from "./Registration.module.css"
 
 const Registration = () => {
     return(
-        <div className={css.container}>
+        <div className={css.registration}>
         <AdvantagesSection />
         <RegisterForm />
             

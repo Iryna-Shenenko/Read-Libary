@@ -1,5 +1,6 @@
 import Logo from "../Logo/Logo.jsx"
 import css from "./RegisterForm.module.css"
+import { FaEyeSlash } from "react-icons/fa";
 
 
 const RegisterForm = () => {
@@ -9,36 +10,39 @@ const RegisterForm = () => {
             <div className={css.container}>
                 <h1 className={css.title}>Expand your mind, reading a book</h1>
 
-            <label htmlFor="Name" className={css.label}>Name</label>
+            
                 <div className={css.container_input}>
-                    <input 
+                    <input className={css.input}
                     id='name'
                     type="name" 
-                    autoFocus
+                    
                     required
-                    placeholder="Enter your name" 
+                    placeholder="Name:" 
                     />
-                </div>
-                <label>Mail</label>
-                <input 
+    
+                <input className={css.input}
                     id='mail'
                     type="mail" 
                     autoFocus
                     required
-                    placeholder="Enter your mail" 
+                    placeholder="Mail:" 
                     />
-                <label>Password</label>
-                <input 
+                
+                <input className={css.input}
                     id='password'
                     type="password" 
                     autoFocus
                     required
-                    placeholder="Enter your password" 
+                    placeholder="Password:" 
                     />
+                    </div>
+                    <div>
+                        <p><FaEyeSlash  className="Eye" size="24"/></p>
+                    </div>
             </div>
-            <div>
-                <button>Registration</button>
-                <p>Already have an account?</p>
+            <div className={css.register}>
+                <button className={css.button}>Registration</button>
+                <p className={css.description}>Already have an account?</p>
             </div>
         </div>
         

@@ -1,0 +1,24 @@
+.container{
+    position: relative;
+    border-radius: 30px;
+    background-color: var(--background);
+    height: 736px;
+    width: 600px;
+    background-image: url(../../images/books.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.avatar{
+    position: absolute;
+    border-radius: 30px;
+   left: 16px;
+    height: auto;
+    border: 1px solid #fff;
+    overflow: hidden;
+    top:0;
+
+
+}

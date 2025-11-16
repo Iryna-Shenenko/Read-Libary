@@ -1,9 +1,10 @@
-import iPhone_15 from "../../images/iPhone 15 Black.png"
+// import books from "../../images/books.png"
+import css from "../AdvantagesSection/AdvantagesSection.module.css"
 
 const AdvantagesSection = () => {
     return (
-        <div>
-            <img src={`${iPhone_15}`} alt="Phone" />
+        <div className={css.container} >
+            {/* <img className={css.avatar} src={`${books}`} alt="Book" /> */}
         </div>
     )
 }
