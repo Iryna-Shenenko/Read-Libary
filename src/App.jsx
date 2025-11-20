@@ -1,4 +1,6 @@
-import Registration from "./pages/Registration/Registration.jsx"
+import LoginPage from "./pages/LoginPage/LoginPage.jsx"
+import RegisterPage from "./pages/RegisterPage/RegisterPage.jsx"
+import RecommendedPage from "./pages/RecommendedPage/RecommendedPage.jsx"
 
 
 
@@ -6,7 +8,9 @@ import Registration from "./pages/Registration/Registration.jsx"
 function App() {
   return (
     <div>
-    <Registration/>
+    <RegisterPage/>
+    <LoginPage />
+    <RecommendedPage />
     </div>
   )
 }

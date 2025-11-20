@@ -1,0 +1,12 @@
+.btnLogout {
+    border: 1px solid rgba(249, 249, 249, 0.2);
+border-radius: 30px;
+padding: 12px 28px;
+width: 114px;
+height: 42px;
+}
+
+.btnLogout:hover,
+.btnLogout:focus {
+  background: #c0e879;
+}

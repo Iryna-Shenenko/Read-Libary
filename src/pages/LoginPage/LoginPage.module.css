@@ -1,0 +1,11 @@
+.loginForm{
+    
+    background: #dc883e;
+    display: flex;
+    flex-direction:row;
+    gap: 16px;
+    width: 100%;
+    height: 800px;
+    padding: 32px;
+    }
+    

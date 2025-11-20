@@ -1,5 +1,5 @@
 import Logo from "../Logo/Logo.jsx"
-import css from "./RegisterForm.module.css"
+import css from "./LoginForm.module.css"
 import { FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -13,14 +13,7 @@ const RegisterForm = () => {
 
             
                 <div className={css.container_input}>
-                    <input className={css.input}
-                    id='name'
-                    type="name" 
                     
-                    required
-                    placeholder="Name:" 
-                    />
-    
                 <input className={css.input}
                     id='mail'
                     type="mail" 
@@ -42,8 +35,8 @@ const RegisterForm = () => {
                     </div>
             </div>
             <div className={css.register}>
-                <button className={css.button}>Registration</button>
-                    <Link className={css.login} to='/login'>Already have an account?</Link>
+                <button className={css.button}>Log In</button>
+                    <Link className={css.login} to='/register'>Don’t have an account?</Link>
                 
             </div>
         </div>

@@ -1,0 +1,18 @@
+.container_header {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+width: 1216px;
+height: 74px;
+background: #1f1f1f;
+}
+
+.menu_header{
+    display: flex;
+    flex-direction: row;
+}
+.item_header {
+    width: 43px;
+height: 26px;
+color: lightblue;
+}
