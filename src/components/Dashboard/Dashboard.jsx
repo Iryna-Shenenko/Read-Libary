@@ -2,9 +2,9 @@ import css from "./Dashboard.module.css"
 
 const Dashboard = () => {
     return (
-        <div>
-            <div>  
-                <h3>Filters</h3>
+        <div className={css.dashboard}>
+            <div className={css.filter}>  
+                <h3 className={css.title}>Filters</h3>
 
              <input className={css.input}
                     id='Book title'
@@ -21,14 +21,15 @@ const Dashboard = () => {
                     required
                     placeholder="The author:" 
                     />
-        
-        <button>To apply</button>
+        <div className={css.container_button}>
+        <button className={css.button}>To apply</button>
+        </div>
         </div>
 
         <div className={css.workout}>
-        <h4>Start your workout</h4>
+        <h4 className={css.title_workout}>Start your workout</h4>
         <ol>
-          <li>Create a personal library</li>
+          <li className={css.list}>Create a personal library</li>
           <li>Create your first workout</li>
         </ol>
       </div>
