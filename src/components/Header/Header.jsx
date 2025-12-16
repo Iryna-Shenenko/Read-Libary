@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
+        <header className={css.header}> 
         <div className={css.container_header} >
             <Logo />
             <div className={css.menu}>
@@ -42,6 +43,7 @@ const Header = () => {
             </div>
 
         </div>
+        </header>
     )
 }
 export default Header

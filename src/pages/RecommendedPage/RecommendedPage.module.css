@@ -1,11 +1,12 @@
-.recommended{
+.page{
     
-    background: #dc883e;
-    display: flex;
-    flex-direction:row;
-    gap: 16px;
-    width: 100%;
-    height: 800px;
-    padding: 32px;
+    background-color: #dc883e;
+    min-height: 100vh;
+    
     }
     
+    .main {
+        display: flex;
+        gap: 24px;
+        padding: 24px;
+    }
