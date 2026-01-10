@@ -2,7 +2,7 @@ import AdvantagesSection from "../../components/AdvantagesSection/AdvantagesSect
 import RegisterForm from "../../components/RegisterForm/RegisterForm.jsx"
 import css from "./RegisterPage.module.css"
 
-const Registration = () => {
+const RegisterPage = () => {
     return(
         <div className={css.registration}>
         <RegisterForm />
@@ -12,4 +12,4 @@ const Registration = () => {
        
     )
 }
-export default Registration
+export default RegisterPage

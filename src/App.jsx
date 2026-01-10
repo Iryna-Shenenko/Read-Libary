@@ -4,11 +4,11 @@ import RecommendedPage from "./pages/RecommendedPage/RecommendedPage.jsx";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout.jsx";
 import MyLibraryPage from "./pages/MyLibraryPage/MyLibraryPage.jsx";
-import ReadingPage from "./pages/ReadingPage/ReadingPage.jsx";
+
 
 
 const RegisterPage = lazy (() => import ('./pages/RegisterPage/RegisterPage.jsx'));
-
+const ReadingPage = lazy (() => import ('./pages/ReadingPage/ReadingPage.jsx'));
 
 function App() {
   return (

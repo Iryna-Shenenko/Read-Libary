@@ -4,7 +4,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
-const RegisterForm = () => {
+const LoginForm = () => {
     return (
         <div className={css.wrapper}>
             <Logo />
@@ -43,4 +43,4 @@ const RegisterForm = () => {
         
     )
 }
-export default RegisterForm
+export default LoginForm

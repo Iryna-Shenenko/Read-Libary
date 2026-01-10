@@ -28,7 +28,7 @@ const RegisterForm = () => {
                     required
                     placeholder="Mail:" 
                     />
-                
+                <div className={css.input_icon_password}> 
                 <input className={css.input}
                     id='password'
                     type="password" 
@@ -36,9 +36,8 @@ const RegisterForm = () => {
                     required
                     placeholder="Password:" 
                     />
-                    </div>
-                    <div>
-                        <p><FaEyeSlash  className="Eye" size="24"/></p>
+                        <svg className={css.icon}><FaEyeSlash  className="Eye" size="24"/></svg>
+                        </div>
                     </div>
             </div>
             <div className={css.register}>
