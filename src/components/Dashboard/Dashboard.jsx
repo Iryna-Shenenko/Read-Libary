@@ -1,4 +1,5 @@
 import css from "./Dashboard.module.css"
+import books from "../..//images/📚.png"
 
 const Dashboard = () => {
     return (
@@ -32,6 +33,11 @@ const Dashboard = () => {
           <li className={css.list}>Create a personal library</li>
           <li>Create your first workout</li>
         </ol>
+      </div>
+      <div className={css.windows}>
+        <img  className={css.books} src={`${books}`} alt="Books" />
+
+        <p className={css.list}>"Books are windows to the world, and reading is a journey into the unknown."</p>
       </div>
         </div>
 

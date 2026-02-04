@@ -68,3 +68,30 @@ letter-spacing: -0.02em;
 color: #f9f9f9;
 
 }
+
+.windows{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 14px;
+    gap: 7px;
+    border-radius: 12px;
+width: 313px;
+height: 83px;
+
+}
+.list{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+color: #686868;
+}
+.books{
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: -0.02em;
+color: #000;
+}
