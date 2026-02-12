@@ -13,22 +13,28 @@ const LoginForm = () => {
 
             
                 <div className={css.container_input}>
-                    
+                 <div>
+                 <label for="email">Email</label>  
                 <input className={css.input}
-                    id='mail'
-                    type="mail" 
+                autocomplete="email"
+                    id='email'
+                    type="email" 
                     autoFocus
                     required
-                    placeholder="Mail:" 
+                    placeholder="Email:" 
                     />
-                
+                </div>
+                <div>
+                <label for="password">Password</label>  
                 <input className={css.input}
+                autocomplete="new-password" // add автозаполнение пароля/
                     id='password'
                     type="password" 
                     autoFocus
                     required
                     placeholder="Password:" 
                     />
+                    </div>
                     </div>
                     <div>
                         <p><FaEyeSlash  className="Eye" size="24"/></p>

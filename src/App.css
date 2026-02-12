@@ -59,3 +59,7 @@ width: 122px;
 height: 42px; 
 background-color: rgb(240, 220, 193);
  }
+ label {
+  display: block;
+  color:aliceblue;
+}
