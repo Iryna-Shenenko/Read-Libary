@@ -29,18 +29,19 @@ import { selectErrorMessage } from "../../redux/auth/selectors.js";
             // .matches(/[a-z]/, 'Email must contain at least one lowercase letter')
             // .matches(/[0-9]/, 'Email must contain at least one number')
             // .matches(/[@$!%*?&]/, 'Email must contain at least one special character')
-            .test('Invalid email domain', (value) => {
+            .test('domin-check', 'Invalid email domain', (value) => {
                 if (!value) return false; // Handle empty value case
                 const parts = value.split('@');
                 if (parts.length < 2) return false; // Invalid email format
-                return parts[1].includes('.') && parts[1].split('.') .filter(Boolean).length > 1;// Check if domain contains a dot
+                return (parts[1].includes('.') && parts[1].split('.') .filter(Boolean).length > 1 );// Check if domain contains a dot
             }
         ),
         password: Yup.string()
             .min(7, 'Password must be at least 7 characters')
             .required('Password is required'),
+
             repeatPassword: Yup.string()
-            .oneOf([Yup.ref('password'), null], 'Passwords must match')
+            .oneOf([Yup.ref('password'), ], 'Passwords must match')
             .required('Repeat Password is required'),
             
     });
@@ -70,7 +71,7 @@ import { selectErrorMessage } from "../../redux/auth/selectors.js";
 
             toast.success('You were successfully signed up!');
             reset();// Clear form fields after successful registration
-        } catch (error) {
+        } catch {
             errorMessage && toast.error(errorMessage);
         }
     };
@@ -127,7 +128,6 @@ import { selectErrorMessage } from "../../redux/auth/selectors.js";
                 autoComplete="new-password" // add автозаполнение пароля/
                     id='password'
                     type="password" 
-                    autoFocus
                     placeholder="Password:" 
                     {...register('password')}
                     />
@@ -136,7 +136,19 @@ import { selectErrorMessage } from "../../redux/auth/selectors.js";
                     )}
                     </div>
                         {/* <svg className={css.icon}><FaEyeSlash  className="Eye" size="24"/></svg> */}
-                    
+                        <div>
+                    <label htmlFor="repeatPassword">Repeat Password</label>
+                    <input
+                    className={css.input}
+                    id="repeatPassword"
+                    type="password"
+                    placeholder="Repeat password:"
+                    {...register('repeatPassword')}
+                    />
+                    {touchedFields.repeatPassword && errors.repeatPassword && (
+                    <p className={css.error}>{errors.repeatPassword.message}</p>
+                         )}
+                    </div>
             </div>
             <div className={css.register}>
               
