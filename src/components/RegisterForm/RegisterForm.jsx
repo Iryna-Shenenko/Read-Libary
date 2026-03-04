@@ -115,9 +115,9 @@ import { selectErrorMessage } from "../../redux/auth/selectors.js";
                     placeholder="Email:" 
                     {...register('email')}
                     />
-                    {touchedFields.email && errors.email && (
+                    {/* {touchedFields.email && errors.email && (
                         <p className={css.error}>{errors.email.message}</p>
-                    )}
+                    )} */}
                     </div>
                 
                     {/*PASSWORD*/}
@@ -136,7 +136,7 @@ import { selectErrorMessage } from "../../redux/auth/selectors.js";
                     )}
                     </div>
                         {/* <svg className={css.icon}><FaEyeSlash  className="Eye" size="24"/></svg> */}
-                        <div>
+                        {/* <div>
                     <label htmlFor="repeatPassword">Repeat Password</label>
                     <input
                     className={css.input}
@@ -148,7 +148,7 @@ import { selectErrorMessage } from "../../redux/auth/selectors.js";
                     {touchedFields.repeatPassword && errors.repeatPassword && (
                     <p className={css.error}>{errors.repeatPassword.message}</p>
                          )}
-                    </div>
+                    </div> */}
             </div>
             <div className={css.register}>
               
